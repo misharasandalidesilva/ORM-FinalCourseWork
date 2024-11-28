@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="nodePane" prefHeight="544.0" prefWidth="754.0" style="-fx-background-color: lightBlue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.MainDashBoardController">
+   <children>
+      <AnchorPane fx:id="rootNode" layoutX="174.0" prefHeight="544.0" prefWidth="580.0" style="-fx-background-color: white;" />
+      <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="154.0" onAction="#btnDashboardOnAction" prefHeight="37.0" prefWidth="130.0" text="DashBoard">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnProgram" buttonType="RAISED" layoutX="24.0" layoutY="280.0" onAction="#btnProgramsOnAction" prefHeight="37.0" prefWidth="130.0" text="Programs">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="239.0" onAction="#btnRegistrationOnAction" prefHeight="37.0" prefWidth="130.0" text="Registration">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUser" buttonType="RAISED" layoutX="22.0" layoutY="355.0" onAction="#btnUserOnAction" prefHeight="37.0" prefWidth="130.0" text="User">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="22.0" layoutY="196.0" onAction="#btnStudentsOnAction" prefHeight="37.0" prefWidth="130.0" text="Student">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnLogOut" layoutX="50.0" layoutY="460.0" onAction="#btnLogoutOnAction" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Logout" textFill="#fc3333db">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnProgram1" buttonType="RAISED" layoutX="24.0" layoutY="317.0" onAction="#btnPaymentOnAction" prefHeight="37.0" prefWidth="130.0" text="Payment">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

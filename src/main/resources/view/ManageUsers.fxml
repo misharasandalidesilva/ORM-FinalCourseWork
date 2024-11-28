@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="544.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.ManageUsersController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="194.0" layoutX="25.0" layoutY="47.0" opacity="0.36" stroke="#000000d6" width="540.0" />
+      <Text layoutX="190.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Users" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtPassword" layoutX="339.0" layoutY="129.0" prefHeight="30.0" prefWidth="165.0" promptText="Password" />
+      <TextField fx:id="txtUserName" layoutX="63.0" layoutY="130.0" prefHeight="30.0" prefWidth="165.0" promptText="UserName" />
+      <JFXButton layoutX="220.0" layoutY="184.0" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: blue;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="301.0" layoutY="184.0" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblUsers" layoutX="25.0" layoutY="254.0" onMouseClicked="#UsertblClicked" prefHeight="281.0" prefWidth="540.0">
+         <columns>
+            <TableColumn fx:id="ColUId" prefWidth="121.0" text="U-ID" />
+            <TableColumn fx:id="ColUName" prefWidth="223.0" text="U-Name" />
+            <TableColumn fx:id="ColRole" prefWidth="195.0" text="Role" />
+         </columns>
+      </TableView>
+      <Label fx:id="lblId" layoutX="111.0" layoutY="81.0" />
+      <ComboBox fx:id="cmbRole" layoutX="339.0" layoutY="77.0" prefWidth="150.0" promptText="Role" />
+      <TextField fx:id="txtUid" layoutX="63.0" layoutY="83.0" prefHeight="30.0" prefWidth="165.0" promptText="ID" />
+   </children>
+</AnchorPane>
